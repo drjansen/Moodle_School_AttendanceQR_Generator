@@ -1,0 +1,5 @@
+# Ignore runtime log files – these may contain sensitive session data
+*.log
+
+# Composer vendor directory
+vendor/
