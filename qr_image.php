@@ -18,7 +18,7 @@ function get_qr_session($school_id, $period_id, $course_period_id, $school_date)
         "course_period_id" => $course_period_id,
         "school_date" => $school_date
     ];
-    $ch = curl_init('https://attendance.icsportals.org/qr-session');
+    $ch = curl_init('https://YOUR_BACKEND_URL/qr-session');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
