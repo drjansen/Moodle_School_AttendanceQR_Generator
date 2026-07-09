@@ -7,7 +7,7 @@ A Moodle local plugin that generates a rotating QR code for student attendance. 
 - Moodle 4.x (requires Moodle `>= 2022041900`)
 - PHP 8.1+
 - Composer
-- A running instance of the [Attendance Backend](https://github.com/YOUR_ORG/YOUR_BACKEND_REPO) (see configuration below)
+- A running instance of the Attendance Backend service (see configuration below)
 
 ## Installation
 
@@ -31,10 +31,10 @@ Before deploying, replace the placeholder in `qr_image.php` with your actual bac
 $ch = curl_init('https://YOUR_BACKEND_URL/qr-session');
 ```
 
-Replace `YOUR_BACKEND_URL` with the hostname and path of your backend service, for example:
+Replace `YOUR_BACKEND_URL` with the hostname of your backend service, for example:
 
 ```
-https://attendance.example.org
+https://attendance.example.org/qr-session
 ```
 
 ### Hardcoded IDs
